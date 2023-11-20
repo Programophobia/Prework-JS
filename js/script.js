@@ -35,7 +35,7 @@ function displayResult(argPlayerMove, argComputerMove) {
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz (⌣̩̩́_⌣̩̩̀)');
   } else if (argPlayerMove == argComputerMove) {
-    printMessage(' Remis *-*');
+    printMessage('"Jak do tego doszło? Nie wiem" Remis');
   } else {
     printMessage('Przegrywasz ¯\\_◉‿◉_/¯');
   }
