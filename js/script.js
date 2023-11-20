@@ -46,8 +46,8 @@ function displayResult(argPlayerMove, argComputerMove) {
     computerPoint++; 
   }
   printMessage('Zagrałam ' + argComputerMove + ', a Ty ' + argPlayerMove);
-  printMessage("Anka: " + computerPoint);
-  printMessage("Ty: " + userPoint);
+  printMessage("Anka: " + computerPoint + " - Ty: "+ userPoint);
+  
 }
 
  playerMove = argButtonName;
