@@ -39,7 +39,7 @@ function displayResult(argPlayerMove, argComputerMove) {
   } else {
     printMessage('Przegrywasz ¯\\_◉‿◉_/¯');
   }
-  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage('Zagrałam ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
 
  playerMove = argButtonName;
