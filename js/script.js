@@ -1,6 +1,8 @@
 var argButtonName, buttonPaper, buttonRock, buttonScissors, argComputerMove, argMoveId, 
   argPlayerMove, computerMove, playerMove, randomNumber;
+  let computerPoint = 0;
 
+  let userPoint = 0;
 
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
@@ -30,16 +32,22 @@ function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz (⌣̩̩́_⌣̩̩̀)');
+    userPoint++;
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz (⌣̩̩́_⌣̩̩̀)');
+    userPoint++;
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz (⌣̩̩́_⌣̩̩̀)');
+    userPoint++;
   } else if (argPlayerMove == argComputerMove) {
     printMessage('"Jak do tego doszło? Nie wiem" Remis');
   } else {
     printMessage('Przegrywasz ¯\\_◉‿◉_/¯');
+    computerPoint++; 
   }
   printMessage('Zagrałam ' + argComputerMove + ', a Ty ' + argPlayerMove);
+  printMessage("Anka: " + computerPoint);
+  printMessage("Ty: " + userPoint);
 }
 
  playerMove = argButtonName;
@@ -54,3 +62,4 @@ function displayResult(argPlayerMove, argComputerMove) {
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
+
