@@ -1,8 +1,7 @@
 var argButtonName, buttonPaper, buttonRock, buttonScissors, argComputerMove, argMoveId, 
   argPlayerMove, computerMove, playerMove, randomNumber;
-  let computerPoint = 0;
-
-  let userPoint = 0;
+  var computerPoint = 0;
+  var userPoint = 0;
 
 buttonRock = document.getElementById('button-rock');
 buttonPaper = document.getElementById('button-paper');
