@@ -1,11 +1,11 @@
 var argButtonName, buttonPaper, buttonRock, buttonScissors, argComputerMove, argMoveId, 
   argPlayerMove, computerMove, playerMove, randomNumber;
-  var computerPoint = 0;
-  var userPoint = 0;
+ let computerPoint = 0;
+ let userPoint = 0;
 
-const buttonRock = document.getElementById('button-rock');
-const buttonPaper = document.getElementById('button-paper');
-const buttonScissors = document.getElementById('button-scissors');
+buttonRock = document.getElementById('button-rock');
+buttonPaper = document.getElementById('button-paper');
+buttonScissors = document.getElementById('button-scissors');
 
 
 function buttonClicked(argButtonName) {
@@ -64,9 +64,9 @@ buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); }
 
 function witajgraczu()
 		{
-			var imie = prompt("Jak masz na imię?");
+			const imie = prompt("Jak masz na imię?");
 			alert("A ja Anka, miło mi " + imie)
       console.log('gracz sie przedstawił')
 		}
-    var przycisk = document.getElementById('przycisk');
+    const przycisk = document.getElementById('przycisk');
     przycisk.addEventListener("click", witajgraczu);
