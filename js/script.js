@@ -1,4 +1,4 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors, argComputerMove, argMoveId, 
+let argButtonName, buttonPaper, buttonRock, buttonScissors, argComputerMove, argMoveId, 
   argPlayerMove, computerMove, playerMove, randomNumber;
  let computerPoint = 0;
  let userPoint = 0;
