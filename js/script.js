@@ -1,11 +1,11 @@
-let argButtonName, buttonPaper, buttonRock, buttonScissors, argComputerMove, argMoveId, 
-  argPlayerMove, computerMove, playerMove, randomNumber;
+let computerMove, playerMove, randomNumber;
+
  let computerPoint = 0;
  let userPoint = 0;
 
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
 
 
 function buttonClicked(argButtonName) {
