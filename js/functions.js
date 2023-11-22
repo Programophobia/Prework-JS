@@ -16,3 +16,4 @@ function printResult(gameResult) {
     document.getElementsByClassName("game-result");
 }
 
+
