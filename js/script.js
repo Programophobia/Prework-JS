@@ -66,5 +66,5 @@ function playerGreeting() {
 	alert("A ja Anka, miło mi " + playerName);
   console.log('player stated his name');
 }
-  const przycisk = document.getElementById('button-greeting');
-  przycisk.addEventListener('click', playerGreeting);
+  const buttonHello = document.getElementById('button-greeting');
+  buttonHello.addEventListener('click', playerGreeting);
