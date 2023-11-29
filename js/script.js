@@ -62,8 +62,8 @@ buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
 function playerGreeting() {
-	const playerName = prompt("Jak masz na imię?");
-	alert("A ja Anka, miło mi " + playerName);
+  const playerName = prompt("Jak masz na imię?");
+  alert("A ja Anka, miło mi " + playerName);
   console.log('player stated his name');
 }
   const buttonHello = document.getElementById('button-greeting');
