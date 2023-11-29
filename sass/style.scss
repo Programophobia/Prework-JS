@@ -1,3 +1,6 @@
+$main-color: white;
+$secondary-color: black;
+
 body {
   background-image: url('https://i.postimg.cc/NFC2grsP/pexels-borja-lopez-1346154.jpg');
   color: white;
@@ -10,8 +13,8 @@ button {
  height: 60px;
  width: 60px;
  border-radius: 50%;
- color: white;
- background-color: black;
+ color: $main-color;
+ background-color: $secondary-color;
  font-size: 50px;
 }
 

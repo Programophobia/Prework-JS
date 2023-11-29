@@ -30,18 +30,18 @@ function displayResult(argPlayerMove, argComputerMove) {
   console.log('wywołano funkcję displayResults z argumentami: ' + argPlayerMove + ', ' + argComputerMove);
   if (argPlayerMove == 'papier' && argComputerMove == 'kamień') {
     printMessage('Wygrywasz (⌣̩̩́_⌣̩̩̀)');
-    userPoint++;
+    userPoint+=10;
   } else if (argPlayerMove == 'kamień' && argComputerMove == 'nożyce') {
     printMessage('Wygrywasz (⌣̩̩́_⌣̩̩̀)');
-    userPoint++;
+    userPoint+=10;
   } else if (argPlayerMove == 'nożyce' && argComputerMove == 'papier') {
     printMessage('Wygrywasz (⌣̩̩́_⌣̩̩̀)');
-    userPoint++;
+    userPoint+=10;
   } else if (argPlayerMove == argComputerMove) {
     printMessage('"Jak do tego doszło? Nie wiem" Remis');
   } else {
     printMessage('Przegrywasz ¯\\_◉‿◉_/¯');
-    computerPoint++; 
+    computerPoint+=10; 
   }
   printMessage('Zagrałam ' + argComputerMove + ', a Ty ' + argPlayerMove);
   printMessage("Anka: " + computerPoint + " - Ty: "+ userPoint);
@@ -61,11 +61,10 @@ buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); });
 
-function witajgraczu()
-		{
-			const imie = prompt("Jak masz na imię?");
-			alert("A ja Anka, miło mi " + imie)
-      console.log('gracz sie przedstawił')
-		}
-    const przycisk = document.getElementById('przycisk');
-    przycisk.addEventListener("click", witajgraczu);
+function playerGreeting() {
+	const playerName = prompt("Jak masz na imię?");
+	alert("A ja Anka, miło mi " + playerName);
+  console.log('player stated his name');
+}
+  const przycisk = document.getElementById('button-greeting');
+  przycisk.addEventListener('click', playerGreeting);
