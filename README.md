@@ -1,1 +1,1 @@
-https://simple-game-in-js.netlify.app/
+ https://simple-game-in-js.netlify.app/
